@@ -186,7 +186,7 @@ function handleSuccessfulLogin(response, email) {
     
     // Redirect after delay
     setTimeout(() => {
-        window.location.href = 'interface.html';
+        window.location.href = 'interface-enhanced.html';
     }, 1500);
 }
 
@@ -386,7 +386,7 @@ function resetInactivityTimer() {
             localStorage.setItem('isAuthenticated', 'false');
             api.clearTokens();
             sessionStorage.clear();
-            window.location.href = '/login.html?timeout=1';
+            window.location.href = 'index.html?timeout=1';
         }
     }, 15 * 60 * 1000); // 15 minutes
 }

@@ -261,7 +261,7 @@ class APIConfig {
         if (response.status === 401) {
           // Unauthorized - clear tokens and redirect to login
           this.clearTokens();
-          window.location.href = '/login.html';
+          window.location.href = 'index.html';
           throw new Error('Unauthorized');
         }
         

@@ -439,14 +439,14 @@ function handleSuccessfulSignup(response) {
     
     // Redirect to interface.html after showing welcome message
     setTimeout(() => {
-        window.location.href = 'interface.html';
+        window.location.href = 'interface-enhanced.html';
     }, 2000);
 }
 
 // Login link handler
 loginLink.addEventListener('click', function(e) {
     e.preventDefault();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 });
 
 // Prevent form submission on Enter key in specific fields
