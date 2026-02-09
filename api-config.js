@@ -4,7 +4,8 @@
 class APIConfig {
   constructor() {
     // API Base URL - Change this to your actual API endpoint
-    this.baseURL = ''; // Demo/static hosting: no backend API
+    this.baseURL = 'https://brain-board-api.onrender.com';
+
     
     // Security tokens
     this.accessToken = null;
