@@ -233,7 +233,9 @@ form.addEventListener('submit', async function (e) {
         
         // DEMO MODE: Simulated login
         // Comment out this section when using real API
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        const response = await api.login(email, password);
+        handleSuccessfulLogin(response, email);
+
         
         // Seed a default admin account once (demo only)
         if (!localStorage.getItem('usersSeeded')) {

@@ -350,6 +350,7 @@ signupForm.addEventListener('submit', async function(e) {
         
         // DEMO MODE: Simulated signup
         // Comment out this section when using real API
+        await api.signup(userData);
         await new Promise(resolve => setTimeout(resolve, 2000));
         
         // Create new user object
